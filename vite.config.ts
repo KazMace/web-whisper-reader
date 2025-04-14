@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  base: "./", // Ensure this is set for GitHub Pages
+  base: "/", // Set the base to root path for proper asset loading
   plugins: [
     react(),
     mode === 'development' && componentTagger(),
@@ -21,4 +21,3 @@ export default defineConfig(({ mode }) => ({
     },
   },
 }));
-
