@@ -30,9 +30,12 @@ export const AboutSection = () => {
           </div>
           <div className="order-1 md:order-2 flex justify-center">
             <div className="relative">
-              <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-primary/10 to-primary/20 flex items-center justify-center p-8 overflow-hidden shadow-elegant">
-                <div className="absolute inset-0 bg-white/10 backdrop-blur-sm rounded-full"></div>
-                <p className="relative text-primary font-medium text-center">Professional photo placeholder</p>
+              <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-primary/10 to-primary/20 flex items-center justify-center p-1 overflow-hidden shadow-elegant">
+                <img 
+                  src="/lovable-uploads/76006b9c-0f4e-4072-9688-256d30b80940.png" 
+                  alt="Christina Hutchings, Counsellor and Psychotherapist" 
+                  className="rounded-full object-cover w-full h-full"
+                />
               </div>
               <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary/10 rounded-full"></div>
               <div className="absolute -top-4 -left-4 w-16 h-16 bg-primary/10 rounded-full"></div>
