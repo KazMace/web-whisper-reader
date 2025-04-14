@@ -7,7 +7,7 @@ export const Services = () => {
   const services = [
     {
       title: "Individual Therapy",
-      description: "One-to-one counselling sessions tailored to your needs and goals.",
+      description: "One-to-one counselling sessions tailored to your needs and goals in Devon or online.",
       details: "£50 per 50 minute session",
     },
     {

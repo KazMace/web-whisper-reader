@@ -1,5 +1,6 @@
 
 import { Link } from "react-router-dom";
+import { Award } from "lucide-react";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -12,11 +13,18 @@ export const Footer = () => {
             <h3 className="text-white text-lg font-medium mb-4">Christina Hutchings</h3>
             <p className="mb-2">MBACP Registered</p>
             <p>Counsellor, Psychotherapist and Clinical Supervisor</p>
+            <div className="mt-4 flex items-center">
+              <img 
+                src="/lovable-uploads/62e8f537-2d5e-466d-9d25-81bece9f2bdc.png" 
+                alt="Professional Standards Authority Accredited Register & BACP Registered Member" 
+                className="h-12 object-contain"
+              />
+            </div>
           </div>
           
           <div>
             <h3 className="text-white text-lg font-medium mb-4">Contact</h3>
-            <p className="mb-2">Norwich, Norfolk</p>
+            <p className="mb-2">Devon, UK</p>
             <p className="mb-2">
               <a href="tel:+447890624645" className="hover:text-white transition-colors">
                 07890 624645

@@ -1,6 +1,5 @@
 
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Helmet } from "react-helmet-async";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
@@ -11,6 +10,16 @@ import { ContactCTA } from "@/components/ContactCTA";
 const Index = () => {
   return (
     <div className="min-h-screen flex flex-col">
+      <Helmet>
+        <title>Christina Hutchings | Counsellor & Psychotherapist in Devon</title>
+        <meta name="description" content="Professional counselling and psychotherapy services in Devon with Christina Hutchings, MBACP Registered Counsellor and Psychotherapist. Offering a safe, supportive space for personal growth and healing." />
+        <meta name="keywords" content="counselling, psychotherapy, therapist, Devon, Christina Hutchings, mental health, anxiety, depression, trauma, BACP registered, clinical supervisor" />
+        <meta property="og:title" content="Christina Hutchings | Counsellor & Psychotherapist in Devon" />
+        <meta property="og:description" content="Professional counselling and psychotherapy services in Devon with Christina Hutchings, MBACP Registered Counsellor and Psychotherapist." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://christinahutchings.uk" />
+        <link rel="canonical" href="https://christinahutchings.uk" />
+      </Helmet>
       <Navigation />
       <main className="flex-1">
         <Hero />
