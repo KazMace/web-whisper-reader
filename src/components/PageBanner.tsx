@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Users, Heart, HandHelping } from "lucide-react";
 
@@ -38,7 +39,7 @@ export const PageBanner = ({ title, subtitle, showIcons = true }: PageBannerProp
         )}
         
         {/* Professional support section with image */}
-        <div className="mt-8 max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-6 bg-transparent backdrop-blur-sm rounded-lg p-4 md:p-6 shadow-elegant border border-white/30">
+        <div className="mt-8 max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-6 bg-white backdrop-blur-sm rounded-lg p-4 md:p-6 shadow-elegant border border-white/30">
           <div className="w-full md:w-1/3 flex-shrink-0">
             <img 
               src="/lovable-uploads/c3604289-b229-488a-8573-53ccdce6c6f0.png" 
@@ -48,12 +49,12 @@ export const PageBanner = ({ title, subtitle, showIcons = true }: PageBannerProp
           </div>
           <div className="text-left">
             <div className="flex items-center gap-4 mb-4">
-              <div className="flex-shrink-0 bg-white/20 p-3 rounded-full">
-                <HandHelping className="h-8 w-8 text-white" />
+              <div className="flex-shrink-0 bg-primary/20 p-3 rounded-full">
+                <HandHelping className="h-8 w-8 text-primary" />
               </div>
-              <h3 className="text-lg md:text-xl font-semibold text-white">Professional Support When You Need It</h3>
+              <h3 className="text-lg md:text-xl font-semibold text-gray-800">Professional Support When You Need It</h3>
             </div>
-            <p className="text-sm md:text-base text-white/90">
+            <p className="text-sm md:text-base text-gray-600">
               Creating a safe, compassionate space for healing, growth, and understanding through professional therapeutic relationships.
             </p>
           </div>
