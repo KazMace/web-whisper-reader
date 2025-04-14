@@ -1,49 +1,11 @@
+
 import { useState } from "react";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
-import { Label } from "@/components/ui/label";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Button } from "@/components/ui/button";
-import { toast } from "@/hooks/use-toast";
 import { Mail, Phone, Clock, MapPin } from "lucide-react";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    message: "",
-  });
-  
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
-  
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    // Simulate form submission to Christina_Hutchings@hotmail.com
-    setTimeout(() => {
-      setIsSubmitting(false);
-      toast({
-        title: "Message sent!",
-        description: "Thank you for your enquiry. I'll get back to you as soon as possible.",
-      });
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        message: "",
-      });
-    }, 1500);
-  };
-  
   return (
     <div className="min-h-screen flex flex-col">
       <Navigation />
@@ -61,7 +23,7 @@ const Contact = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
               {/* Contact Information - Landscape Tile */}
-              <Card className="mb-12 shadow-elegant">
+              <Card className="shadow-elegant">
                 <CardContent className="p-8">
                   <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
                   <div className="grid md:grid-cols-2 gap-8">
@@ -125,63 +87,6 @@ const Contact = () => {
                       </div>
                     </div>
                   </div>
-                </CardContent>
-              </Card>
-              
-              {/* Contact Form */}
-              <Card>
-                <CardContent className="p-8">
-                  <h2 className="text-2xl font-bold mb-6">Send a Message</h2>
-                  <form onSubmit={handleSubmit} className="space-y-6">
-                    <div className="space-y-2">
-                      <Label htmlFor="name">Name</Label>
-                      <Input 
-                        id="name" 
-                        name="name" 
-                        value={formData.name} 
-                        onChange={handleChange} 
-                        required 
-                      />
-                    </div>
-                    
-                    <div className="space-y-2">
-                      <Label htmlFor="email">Email</Label>
-                      <Input 
-                        id="email" 
-                        name="email" 
-                        type="email" 
-                        value={formData.email} 
-                        onChange={handleChange} 
-                        required 
-                      />
-                    </div>
-                    
-                    <div className="space-y-2">
-                      <Label htmlFor="phone">Phone (optional)</Label>
-                      <Input 
-                        id="phone" 
-                        name="phone" 
-                        value={formData.phone} 
-                        onChange={handleChange} 
-                      />
-                    </div>
-                    
-                    <div className="space-y-2">
-                      <Label htmlFor="message">Message</Label>
-                      <Textarea 
-                        id="message" 
-                        name="message" 
-                        rows={5} 
-                        value={formData.message} 
-                        onChange={handleChange} 
-                        required 
-                      />
-                    </div>
-                    
-                    <Button type="submit" className="w-full" disabled={isSubmitting}>
-                      {isSubmitting ? "Sending..." : "Send Message"}
-                    </Button>
-                  </form>
                 </CardContent>
               </Card>
             </div>
