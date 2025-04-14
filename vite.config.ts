@@ -12,9 +12,7 @@ export default defineConfig(({ mode }) => ({
   base: "./", // Ensure this is set for GitHub Pages
   plugins: [
     react(),
-    mode === 'development' &&
-    componentTagger(),
-  ].filter(Boolean),
+  ],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
