@@ -12,9 +12,7 @@ export default defineConfig(({ mode }) => ({
   },
   base: "/", // Set the base to root path for proper asset loading
   plugins: [
-    react({
-      jsxImportSource: '@emotion/react',
-    }),
+    react(),
     mode === 'development' && componentTagger(),
   ].filter(Boolean),
   resolve: {
@@ -22,7 +20,14 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  optimizeDeps: {
-    include: ['react', 'react-dom'],
-  },
+  build: {
+    outDir: "dist",
+    rollupOptions: {
+      onwarn(warning, warn) {
+        // Ignore circular dependency warnings
+        if (warning.code === 'CIRCULAR_DEPENDENCY') return;
+        warn(warning);
+      }
+    }
+  }
 }));
