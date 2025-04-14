@@ -10,11 +10,12 @@ interface PageBannerProps {
 
 export const PageBanner = ({ title, subtitle, showIcons = true }: PageBannerProps) => {
   return (
-    <section className="relative py-16 md:py-24 bg-gradient-to-r from-primary/10 to-primary/20 overflow-hidden">
+    <section className="relative py-16 md:py-24 bg-gray-900 overflow-hidden">
       {/* Decorative elements */}
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
-        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
+      <div className="absolute inset-0 opacity-[0.02]">
+        <div className="absolute top-0 left-0 right-0 h-px bg-white/10"></div>
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-white/10"></div>
+        <div className="absolute inset-0 bg-pattern"></div>
       </div>
       
       {/* Icons representing professionals helping patients */}
@@ -30,15 +31,15 @@ export const PageBanner = ({ title, subtitle, showIcons = true }: PageBannerProp
       
       {/* Main banner content */}
       <div className="container relative mx-auto px-4 text-center z-10">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">{title}</h1>
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight text-white">{title}</h1>
         {subtitle && (
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
             {subtitle}
           </p>
         )}
         
         {/* Professional support section with image */}
-        <div className="mt-8 max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-6 bg-white/80 backdrop-blur-sm rounded-lg p-4 md:p-6 shadow-elegant border border-primary/10">
+        <div className="mt-8 max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-6 bg-white/10 backdrop-blur-sm rounded-lg p-4 md:p-6 shadow-elegant border border-white/20">
           <div className="w-full md:w-1/3 flex-shrink-0">
             <img 
               src="/lovable-uploads/c3604289-b229-488a-8573-53ccdce6c6f0.png" 
@@ -51,9 +52,9 @@ export const PageBanner = ({ title, subtitle, showIcons = true }: PageBannerProp
               <div className="flex-shrink-0 bg-primary/10 p-3 rounded-full">
                 <HandHelping className="h-8 w-8 text-primary" />
               </div>
-              <h3 className="text-lg md:text-xl font-semibold text-foreground">Professional Support When You Need It</h3>
+              <h3 className="text-lg md:text-xl font-semibold text-white">Professional Support When You Need It</h3>
             </div>
-            <p className="text-sm md:text-base text-muted-foreground">
+            <p className="text-sm md:text-base text-gray-300">
               Creating a safe, compassionate space for healing, growth, and understanding through professional therapeutic relationships.
             </p>
           </div>
@@ -64,3 +65,4 @@ export const PageBanner = ({ title, subtitle, showIcons = true }: PageBannerProp
     </section>
   );
 };
+
