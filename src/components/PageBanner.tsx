@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Users, Heart, HandHelping } from "lucide-react";
 import professionalSupportImage from "@/assets/professional-support.jpg";
