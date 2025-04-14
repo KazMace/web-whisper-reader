@@ -6,6 +6,7 @@ import { Hero } from "@/components/Hero";
 import { Services } from "@/components/Services";
 import { AboutSection } from "@/components/AboutSection";
 import { ContactCTA } from "@/components/ContactCTA";
+import { PageBanner } from "@/components/PageBanner";
 
 const Index = () => {
   return (
@@ -22,6 +23,10 @@ const Index = () => {
       </Helmet>
       <Navigation />
       <main className="flex-1">
+        <PageBanner 
+          title="Professional Counselling & Psychotherapy" 
+          subtitle="Expert therapeutic support to help you navigate life's challenges"
+        />
         <Hero />
         <AboutSection />
         <Services />
