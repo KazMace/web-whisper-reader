@@ -4,7 +4,8 @@ import { Footer } from "@/components/Footer";
 import { PageBanner } from "@/components/PageBanner";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { Checkbox } from "@/components/ui/checkbox";
-import { ChevronDown } from "lucide-react";
+import { Award, ChevronDown } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
 
 const About = () => {
   const areasOfExperience = [
@@ -19,6 +20,18 @@ const About = () => {
     "Trauma & Abuse",
     "Bullying",
     "Identity Development & Self Esteem"
+  ];
+
+  const qualifications = [
+    "Certificate in Clinical Supervision: Level 6",
+    "Advanced Diploma in Psychotherapeutic Counselling: Level 5",
+    "Diploma in Therapeutic Counselling: Level 4 (CPCAB)",
+    "Cognitive Behavioural Therapy: Levels 1, 2 and 3",
+    "Advanced Certificate in Transactional Analysis (Iron Mill)",
+    "Aspiring Management Course, Levels 1,2&3 (Axis Consulting)",
+    "Diploma in Clinical Psychology & Counselling (Bridge Foundation)",
+    "Psychology Degree, BA Hons (1999)",
+    "Certificate in Education (Cert Ed)"
   ];
 
   return (
@@ -46,11 +59,15 @@ const About = () => {
                 <div className="md:w-2/3">
                   <h2 className="text-2xl md:text-3xl font-bold mb-4">Hello, I'm Christina</h2>
                   <p className="text-muted-foreground mb-4">
-                    I'm a fully qualified and BACP registered Integrative Counsellor and Psychotherapist with a private practice in Morchard Bishop, Devon.
+                    I'm a fully qualified and BACP registered Integrative Counsellor and Psychotherapist with a private practice in Morchard Bishop, Devon. I am also Accredited with the National Counselling Society.
                   </p>
                   <p className="text-muted-foreground mb-4">
                     I work with adults facing a wide range of difficulties, including anxiety, depression, loss, trauma, relationship issues, low self-esteem, identity struggles, and life transitions. My approach is warm, non-judgmental, and collaborative.
                   </p>
+                  <div className="flex items-center gap-3 bg-primary/5 px-4 py-3 rounded-full mb-4 w-fit">
+                    <Award className="text-primary h-5 w-5" />
+                    <span className="font-medium">BACP Registered Member</span>
+                  </div>
                 </div>
               </div>
               
@@ -61,16 +78,37 @@ const About = () => {
                 </p>
                 
                 <p>
-                  My core training is psychodynamic, meaning I consider how past experiences may influence present difficulties. I also incorporate elements of person-centred therapy, existential approaches, and attachment theory.
+                  My core training is psychodynamic, meaning I consider how past experiences may influence present difficulties. I have trained in Gestalt Therapy, Cognitive Behavioural Therapy (CBT) and Transactional Analysis. I also incorporate elements of person-centred therapy, existential approaches, and attachment theory.
                 </p>
                 
-                <h2>Qualifications & Experience</h2>
+                <h2 className="mt-8">Qualifications</h2>
+                <div className="mb-8">
+                  <ul className="list-none space-y-2">
+                    {qualifications.map((qualification, index) => (
+                      <li key={index} className="flex items-start gap-2">
+                        <span className="text-primary font-bold">•</span>
+                        <span>{qualification}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                
+                <h2>Clinical Supervision</h2>
                 <p>
-                  I hold a Postgraduate Diploma in Counselling and Psychotherapy from the University of East Anglia and am a registered member of the British Association for Counselling and Psychotherapy (BACP). I adhere to their ethical framework and engage in regular clinical supervision and continuing professional development.
+                  I am a qualified Supervisor and offer Supervision to both experienced Counsellors and Trainees and other Health Care Professionals. My private practice is in Morchard Bishop near Crediton.
+                </p>
+                
+                <h2>British Association for Counselling and Psychotherapy</h2>
+                <p>
+                  I am a Registered member of the British Association for Counselling and Psychotherapy (BACP) and work within their Ethical Framework. I have regular supervision as required by the BACP and I am fully insuranced.
                 </p>
                 
                 <p>
-                  In addition to my private practice, I have experience working within mental health charities and educational settings, supporting clients with diverse backgrounds and needs.
+                  I am committed to my own Continual Professional Development and regularly undertake training to enhance my work. I have recently completed courses in: Confidentiality, Child Protection and Safeguarding, Autism (National Autistic Society), Mindfulness and Trauma Work (Babette Rothschild).
+                </p>
+                
+                <p>
+                  I have a current DBS (CRB:Criminal Records Bureau) check and I am a LGBTQ+ Affirmative Therapist.
                 </p>
                 
                 <h2 className="mt-8">Areas of Experience</h2>
