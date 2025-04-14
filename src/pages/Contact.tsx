@@ -8,6 +8,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { toast } from "@/hooks/use-toast";
+import { Mail, Phone, Clock, MapPin } from "lucide-react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -60,108 +61,130 @@ const Contact = () => {
         <section className="py-12 md:py-16">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
-              <div className="grid md:grid-cols-2 gap-12">
-                <div>
-                  <h2 className="text-2xl font-bold mb-6">Get in Touch</h2>
-                  <Card>
-                    <CardContent className="p-6">
-                      <form onSubmit={handleSubmit} className="space-y-6">
-                        <div className="space-y-2">
-                          <Label htmlFor="name">Name</Label>
-                          <Input 
-                            id="name" 
-                            name="name" 
-                            value={formData.name} 
-                            onChange={handleChange} 
-                            required 
-                          />
-                        </div>
-                        
-                        <div className="space-y-2">
-                          <Label htmlFor="email">Email</Label>
-                          <Input 
-                            id="email" 
-                            name="email" 
-                            type="email" 
-                            value={formData.email} 
-                            onChange={handleChange} 
-                            required 
-                          />
-                        </div>
-                        
-                        <div className="space-y-2">
-                          <Label htmlFor="phone">Phone (optional)</Label>
-                          <Input 
-                            id="phone" 
-                            name="phone" 
-                            value={formData.phone} 
-                            onChange={handleChange} 
-                          />
-                        </div>
-                        
-                        <div className="space-y-2">
-                          <Label htmlFor="message">Message</Label>
-                          <Textarea 
-                            id="message" 
-                            name="message" 
-                            rows={5} 
-                            value={formData.message} 
-                            onChange={handleChange} 
-                            required 
-                          />
-                        </div>
-                        
-                        <Button type="submit" className="w-full" disabled={isSubmitting}>
-                          {isSubmitting ? "Sending..." : "Send Message"}
-                        </Button>
-                      </form>
-                    </CardContent>
-                  </Card>
-                </div>
-                
-                <div>
+              {/* Contact Information - Landscape Tile */}
+              <Card className="mb-12 shadow-elegant">
+                <CardContent className="p-8">
                   <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
-                  <Card>
-                    <CardContent className="p-6">
-                      <div className="space-y-6">
-                        <div>
-                          <h3 className="text-lg font-medium mb-2">Location</h3>
-                          <p className="text-muted-foreground">
-                            Morchard Bishop, Devon<br />
-                            (Specific location details provided when booking)
-                          </p>
-                        </div>
-                        
-                        <div>
-                          <h3 className="text-lg font-medium mb-2">Email</h3>
-                          <p className="text-muted-foreground">
-                            <a href="mailto:Christina_Hutchings@hotmail.com" className="hover:text-primary transition-colors">
-                              Christina_Hutchings@hotmail.com
-                            </a>
-                          </p>
-                        </div>
-                        
-                        <div>
-                          <h3 className="text-lg font-medium mb-2">Phone</h3>
-                          <p className="text-muted-foreground">
-                            <a href="tel:+447890624645" className="hover:text-primary transition-colors">
-                              07890 624645
-                            </a>
-                          </p>
-                        </div>
-                        
-                        <div>
-                          <h3 className="text-lg font-medium mb-2">Working Hours</h3>
-                          <p className="text-muted-foreground">
-                            Monday - Friday: 9am - 6pm<br />
-                            Saturday & Sunday: Closed
-                          </p>
-                        </div>
+                  <div className="grid md:grid-cols-4 gap-8">
+                    <div className="flex items-start gap-3">
+                      <div className="bg-primary/10 p-3 rounded-full">
+                        <MapPin className="h-5 w-5 text-primary" />
                       </div>
-                    </CardContent>
-                  </Card>
-                </div>
-              </div>
+                      <div>
+                        <h4 className="font-medium text-primary mb-1">Location</h4>
+                        <p className="text-muted-foreground">
+                          Morchard Bishop, Devon<br />
+                          (Specific location details provided when booking)
+                        </p>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-start gap-3">
+                      <div className="bg-primary/10 p-3 rounded-full">
+                        <Mail className="h-5 w-5 text-primary" />
+                      </div>
+                      <div>
+                        <h4 className="font-medium text-primary mb-1">Email</h4>
+                        <p className="text-muted-foreground">
+                          <a 
+                            href="mailto:Christina_Hutchings@hotmail.com" 
+                            className="hover:text-primary transition-colors"
+                          >
+                            Christina_Hutchings@hotmail.com
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-start gap-3">
+                      <div className="bg-primary/10 p-3 rounded-full">
+                        <Phone className="h-5 w-5 text-primary" />
+                      </div>
+                      <div>
+                        <h4 className="font-medium text-primary mb-1">Phone</h4>
+                        <p className="text-muted-foreground">
+                          <a 
+                            href="tel:+447890624645" 
+                            className="hover:text-primary transition-colors"
+                          >
+                            07890 624645
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-start gap-3">
+                      <div className="bg-primary/10 p-3 rounded-full">
+                        <Clock className="h-5 w-5 text-primary" />
+                      </div>
+                      <div>
+                        <h4 className="font-medium text-primary mb-1">Working Hours</h4>
+                        <p className="text-muted-foreground">
+                          Monday - Friday: 9am - 6pm<br />
+                          Saturday & Sunday: Closed
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+              
+              {/* Contact Form */}
+              <Card>
+                <CardContent className="p-8">
+                  <h2 className="text-2xl font-bold mb-6">Send a Message</h2>
+                  <form onSubmit={handleSubmit} className="space-y-6">
+                    <div className="space-y-2">
+                      <Label htmlFor="name">Name</Label>
+                      <Input 
+                        id="name" 
+                        name="name" 
+                        value={formData.name} 
+                        onChange={handleChange} 
+                        required 
+                      />
+                    </div>
+                    
+                    <div className="space-y-2">
+                      <Label htmlFor="email">Email</Label>
+                      <Input 
+                        id="email" 
+                        name="email" 
+                        type="email" 
+                        value={formData.email} 
+                        onChange={handleChange} 
+                        required 
+                      />
+                    </div>
+                    
+                    <div className="space-y-2">
+                      <Label htmlFor="phone">Phone (optional)</Label>
+                      <Input 
+                        id="phone" 
+                        name="phone" 
+                        value={formData.phone} 
+                        onChange={handleChange} 
+                      />
+                    </div>
+                    
+                    <div className="space-y-2">
+                      <Label htmlFor="message">Message</Label>
+                      <Textarea 
+                        id="message" 
+                        name="message" 
+                        rows={5} 
+                        value={formData.message} 
+                        onChange={handleChange} 
+                        required 
+                      />
+                    </div>
+                    
+                    <Button type="submit" className="w-full" disabled={isSubmitting}>
+                      {isSubmitting ? "Sending..." : "Send Message"}
+                    </Button>
+                  </form>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </section>
