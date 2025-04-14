@@ -12,6 +12,10 @@ if (!rootElement) {
   console.error("Could not find root element to mount React app");
 } else {
   console.log("Found root element, mounting React app");
-  createRoot(rootElement).render(<App />);
-  console.log("React app mounted");
+  try {
+    createRoot(rootElement).render(<App />);
+    console.log("React app mounted");
+  } catch (error) {
+    console.error("Error rendering React app:", error);
+  }
 }

@@ -12,12 +12,17 @@ export default defineConfig(({ mode }) => ({
   },
   base: "/", // Set the base to root path for proper asset loading
   plugins: [
-    react(),
+    react({
+      jsxImportSource: '@emotion/react',
+    }),
     mode === 'development' && componentTagger(),
   ].filter(Boolean),
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
+  },
+  optimizeDeps: {
+    include: ['react', 'react-dom'],
   },
 }));

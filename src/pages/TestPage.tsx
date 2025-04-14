@@ -2,6 +2,7 @@
 import React from 'react';
 
 const TestPage = () => {
+  console.log("Rendering TestPage component");
   return (
     <div className="min-h-screen flex items-center justify-center">
       <div className="text-center p-8">
