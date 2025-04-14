@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useIsMobile } from "@/hooks/use-mobile";
@@ -29,7 +28,7 @@ export const ContactCTA = () => {
                 </div>
                 <div>
                   <h4 className="font-medium text-primary mb-1">Email</h4>
-                  <p className={isMobile ? "text-sm" : ""}>christina@example.com</p>
+                  <p className={isMobile ? "text-sm" : ""}>christina@christinahutchings.uk</p>
                 </div>
               </div>
               
