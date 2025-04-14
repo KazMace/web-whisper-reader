@@ -46,7 +46,7 @@ const About = () => {
                 <div className="md:w-2/3">
                   <h2 className="text-2xl md:text-3xl font-bold mb-4">Hello, I'm Christina</h2>
                   <p className="text-muted-foreground mb-4">
-                    I'm a fully qualified and BACP registered Integrative Counsellor and Psychotherapist with a private practice in Norwich, Norfolk.
+                    I'm a fully qualified and BACP registered Integrative Counsellor and Psychotherapist with a private practice in Morchard Bishop, Devon.
                   </p>
                   <p className="text-muted-foreground mb-4">
                     I work with adults facing a wide range of difficulties, including anxiety, depression, loss, trauma, relationship issues, low self-esteem, identity struggles, and life transitions. My approach is warm, non-judgmental, and collaborative.
@@ -79,7 +79,7 @@ const About = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2 mt-4 mb-8">
                   {areasOfExperience.map((area, index) => (
                     <div key={index} className="flex items-center space-x-2">
-                      <Checkbox id={`area-${index}`} checked readOnly />
+                      <Checkbox id={`area-${index}`} checked />
                       <label
                         htmlFor={`area-${index}`}
                         className="text-base font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
@@ -90,20 +90,15 @@ const About = () => {
                   ))}
                 </div>
                 
-                <Collapsible className="border rounded-lg p-4 mb-8">
-                  <CollapsibleTrigger className="flex items-center justify-between w-full">
-                    <h3 className="text-xl font-medium">How I Can Help</h3>
-                    <ChevronDown className="h-5 w-5 transition-transform duration-200" />
-                  </CollapsibleTrigger>
-                  <CollapsibleContent className="pt-4">
-                    <p>
-                      Whether you're going through a difficult life transition, struggling with anxiety or depression, or simply feeling stuck, therapy can provide a space to explore your feelings and find a path forward. I'm here to support you on that journey.
-                    </p>
-                    <p className="mt-2">
-                      My integrative approach means I can adapt my therapeutic style to best meet your needs, drawing from different theories and techniques as appropriate.
-                    </p>
-                  </CollapsibleContent>
-                </Collapsible>
+                <div className="bg-primary/5 rounded-lg p-6 mb-8 shadow-sm">
+                  <h3 className="text-xl font-medium mb-4">How I Can Help</h3>
+                  <p>
+                    Whether you're going through a difficult life transition, struggling with anxiety or depression, or simply feeling stuck, therapy can provide a space to explore your feelings and find a path forward. I'm here to support you on that journey.
+                  </p>
+                  <p className="mt-2">
+                    My integrative approach means I can adapt my therapeutic style to best meet your needs, drawing from different theories and techniques as appropriate.
+                  </p>
+                </div>
               </div>
             </div>
           </div>

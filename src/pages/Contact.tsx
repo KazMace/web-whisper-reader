@@ -28,7 +28,7 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
+    // Simulate form submission to Christina_Hutchings@hotmail.com
     setTimeout(() => {
       setIsSubmitting(false);
       toast({
@@ -127,7 +127,7 @@ const Contact = () => {
                         <div>
                           <h3 className="text-lg font-medium mb-2">Location</h3>
                           <p className="text-muted-foreground">
-                            Norwich, Norfolk<br />
+                            Morchard Bishop, Devon<br />
                             (Specific location details provided when booking)
                           </p>
                         </div>
@@ -135,8 +135,8 @@ const Contact = () => {
                         <div>
                           <h3 className="text-lg font-medium mb-2">Email</h3>
                           <p className="text-muted-foreground">
-                            <a href="mailto:christina@christinahutchings.uk" className="hover:text-primary transition-colors">
-                              christina@christinahutchings.uk
+                            <a href="mailto:Christina_Hutchings@hotmail.com" className="hover:text-primary transition-colors">
+                              Christina_Hutchings@hotmail.com
                             </a>
                           </p>
                         </div>

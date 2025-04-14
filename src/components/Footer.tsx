@@ -30,7 +30,7 @@ export const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start gap-3 opacity-90">
                 <MapPin className="h-5 w-5 mt-0.5 text-primary/80" />
-                <span>Devon, UK</span>
+                <span>Morchard Bishop, Devon, UK</span>
               </li>
               <li className="flex items-center gap-3 opacity-90">
                 <Phone className="h-5 w-5 text-primary/80" />
@@ -40,8 +40,8 @@ export const Footer = () => {
               </li>
               <li className="flex items-center gap-3 opacity-90">
                 <Mail className="h-5 w-5 text-primary/80" />
-                <a href="mailto:christina@christinahutchings.uk" className="hover:text-white transition-colors">
-                  christina@christinahutchings.uk
+                <a href="mailto:Christina_Hutchings@hotmail.com" className="hover:text-white transition-colors">
+                  Christina_Hutchings@hotmail.com
                 </a>
               </li>
             </ul>
