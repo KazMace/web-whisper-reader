@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
@@ -65,7 +64,7 @@ const Contact = () => {
               <Card className="mb-12 shadow-elegant">
                 <CardContent className="p-8">
                   <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
-                  <div className="grid md:grid-cols-4 gap-8">
+                  <div className="grid md:grid-cols-2 gap-8">
                     <div className="flex items-start gap-3">
                       <div className="bg-primary/10 p-3 rounded-full">
                         <MapPin className="h-5 w-5 text-primary" />
@@ -98,6 +97,19 @@ const Contact = () => {
                     
                     <div className="flex items-start gap-3">
                       <div className="bg-primary/10 p-3 rounded-full">
+                        <Clock className="h-5 w-5 text-primary" />
+                      </div>
+                      <div>
+                        <h4 className="font-medium text-primary mb-1">Working Hours</h4>
+                        <p className="text-muted-foreground">
+                          Monday - Friday: 9am - 6pm<br />
+                          Saturday & Sunday: Closed
+                        </p>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-start gap-3">
+                      <div className="bg-primary/10 p-3 rounded-full">
                         <Phone className="h-5 w-5 text-primary" />
                       </div>
                       <div>
@@ -109,19 +121,6 @@ const Contact = () => {
                           >
                             07890 624645
                           </a>
-                        </p>
-                      </div>
-                    </div>
-                    
-                    <div className="flex items-start gap-3">
-                      <div className="bg-primary/10 p-3 rounded-full">
-                        <Clock className="h-5 w-5 text-primary" />
-                      </div>
-                      <div>
-                        <h4 className="font-medium text-primary mb-1">Working Hours</h4>
-                        <p className="text-muted-foreground">
-                          Monday - Friday: 9am - 6pm<br />
-                          Saturday & Sunday: Closed
                         </p>
                       </div>
                     </div>
