@@ -1,6 +1,6 @@
+
 import React from "react";
 import { Users, Heart, HandHelping } from "lucide-react";
-import professionalSupportImage from "@/assets/professional-support.jpg";
 
 interface PageBannerProps {
   title: string;
@@ -41,8 +41,8 @@ export const PageBanner = ({ title, subtitle, showIcons = true }: PageBannerProp
         <div className="mt-8 max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-6 bg-white/80 backdrop-blur-sm rounded-lg p-4 md:p-6 shadow-elegant border border-primary/10">
           <div className="w-full md:w-1/3 flex-shrink-0">
             <img 
-              src={professionalSupportImage} 
-              alt="Professional counseling support" 
+              src="/lovable-uploads/c3604289-b229-488a-8573-53ccdce6c6f0.png" 
+              alt="Serene forest path representing the healing journey" 
               className="w-full h-48 md:h-64 object-cover rounded-lg shadow-md"
             />
           </div>
