@@ -23,7 +23,7 @@ const Index = () => {
       <main className="flex-1">
         <PageBanner 
           title="Professional Counselling & Psychotherapy" 
-          subtitle="Expert therapeutic support to help you navigate life's challenges"
+          subtitle="Expert therapeutic support to help you navigate life's challenges, including Clinical Supervision"
         />
         <Hero />
         <ContactCTA />
