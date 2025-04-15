@@ -10,7 +10,7 @@ interface PageBannerProps {
 
 export const PageBanner = ({ title, subtitle, showIcons = true }: PageBannerProps) => {
   return (
-    <section className="relative py-16 md:py-24 bg-primary overflow-hidden">
+    <section className="relative py-16 md:py-24 bg-primary/90 overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute inset-0 opacity-[0.05]">
         <div className="absolute top-0 left-0 right-0 h-px bg-white/20"></div>
