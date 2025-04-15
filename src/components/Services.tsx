@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -30,7 +29,7 @@ export const Services = () => {
   ];
 
   return (
-    <section className="py-20 md:py-28 bg-gradient-to-b from-white to-blue-50/50">
+    <section className="py-20 md:py-28 bg-gradient-to-b from-primary/5 to-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Services I Offer</h2>
