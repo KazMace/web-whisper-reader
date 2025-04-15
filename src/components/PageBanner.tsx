@@ -43,4 +43,3 @@ export const PageBanner = ({ title, subtitle, showIcons = true }: PageBannerProp
     </section>
   );
 };
-
