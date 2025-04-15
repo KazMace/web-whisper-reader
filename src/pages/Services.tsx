@@ -1,3 +1,4 @@
+
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -18,7 +19,7 @@ const Services = () => {
           </div>
         </section>
         
-        <section className="py-12 md:py-16 bg-gray-50">
+        <section className="py-12 md:py-16">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <div className="grid gap-10">
@@ -43,7 +44,7 @@ const Services = () => {
                           
                           <h3 className="text-xl font-medium mb-4">Format Options</h3>
                           <ul className="list-disc list-inside text-muted-foreground space-y-2 mb-6">
-                            <li>Face-to-face sessions in Morchard Bishop, Devon</li>
+                            <li>Face-to-face sessions in Norwich</li>
                             <li>Online therapy via secure video platform</li>
                             <li>Telephone sessions</li>
                           </ul>

@@ -10,7 +10,7 @@ interface PageBannerProps {
 
 export const PageBanner = ({ title, subtitle, showIcons = true }: PageBannerProps) => {
   return (
-    <section className="relative py-16 md:py-24 bg-gradient-to-b from-primary/90 to-primary/80 overflow-hidden">
+    <section className="relative py-16 md:py-24 bg-primary overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute inset-0 opacity-[0.05]">
         <div className="absolute top-0 left-0 right-0 h-px bg-white/20"></div>
@@ -37,6 +37,28 @@ export const PageBanner = ({ title, subtitle, showIcons = true }: PageBannerProp
             {subtitle}
           </p>
         )}
+        
+        {/* Professional support section with image */}
+        <div className="mt-8 max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-6 bg-transparent backdrop-blur-sm rounded-lg p-4 md:p-6 shadow-elegant border border-white/30">
+          <div className="w-full md:w-1/3 flex-shrink-0">
+            <img 
+              src="/lovable-uploads/c3604289-b229-488a-8573-53ccdce6c6f0.png" 
+              alt="Serene forest path representing the healing journey" 
+              className="w-full h-48 md:h-64 object-cover rounded-lg shadow-md"
+            />
+          </div>
+          <div className="text-left">
+            <div className="flex items-center gap-4 mb-4">
+              <div className="flex-shrink-0 bg-white/20 p-3 rounded-full">
+                <HandHelping className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-lg md:text-xl font-semibold text-white">Professional Support When You Need It</h3>
+            </div>
+            <p className="text-sm md:text-base text-white/90">
+              Creating a safe, compassionate space for healing, growth, and understanding through professional therapeutic relationships.
+            </p>
+          </div>
+        </div>
       </div>
       
       <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>

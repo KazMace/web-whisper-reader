@@ -52,7 +52,7 @@ export const Navigation = () => {
             </Button>
             
             {isMenuOpen && (
-              <div className="fixed inset-0 top-[62px] z-50 bg-gray-800 text-white animate-in">
+              <div className="fixed inset-0 top-[62px] z-50 bg-white/98 backdrop-blur-sm animate-in">
                 <nav className="container mx-auto px-4 py-8">
                   <ul className="flex flex-col space-y-6">
                     {menuItems.map((item) => (
@@ -62,7 +62,7 @@ export const Navigation = () => {
                           className={`text-lg font-medium transition-colors relative ${
                             location.pathname === item.path 
                               ? 'text-primary after:content-[""] after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:w-8 after:h-0.5 after:bg-primary' 
-                              : 'text-white hover:text-primary'
+                              : 'hover:text-primary'
                           }`}
                         >
                           {item.name}
