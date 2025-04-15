@@ -134,10 +134,10 @@ const Contact = () => {
                         <h4 className="font-medium text-primary mb-1">Phone</h4>
                         <p className="text-muted-foreground">
                           <a 
-                            href="tel:+447890624645" 
+                            href="tel:+447548972668" 
                             className="hover:text-primary transition-colors"
                           >
-                            07890 624645
+                            0754 897 2668
                           </a>
                         </p>
                       </div>

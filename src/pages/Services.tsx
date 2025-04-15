@@ -44,7 +44,7 @@ const Services = () => {
                           
                           <h3 className="text-xl font-medium mb-4">Format Options</h3>
                           <ul className="list-disc list-inside text-muted-foreground space-y-2 mb-6">
-                            <li>Face-to-face sessions in Norwich</li>
+                            <li>Face-to-face sessions in Morchard Bishop, Devon</li>
                             <li>Online therapy via secure video platform</li>
                             <li>Telephone sessions</li>
                           </ul>
