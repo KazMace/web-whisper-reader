@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
+import { Services } from "@/components/Services";
 import { AboutSection } from "@/components/AboutSection";
 import { ContactCTA } from "@/components/ContactCTA";
 import { PageBanner } from "@/components/PageBanner";
@@ -28,6 +29,7 @@ const Index = () => {
         />
         <Hero />
         <AboutSection />
+        <Services />
         <ContactCTA />
       </main>
       <Footer />

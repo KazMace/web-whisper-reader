@@ -39,7 +39,7 @@ export const PageBanner = ({ title, subtitle, showIcons = true }: PageBannerProp
         )}
         
         {/* Professional support section with image */}
-        <div className="mt-8 max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-6 bg-transparent backdrop-blur-sm rounded-lg p-4 md:p-6 shadow-elegant border border-white/30">
+        <div className="mt-8 max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-6 bg-white/20 backdrop-blur-sm rounded-lg p-4 md:p-6 shadow-elegant border border-white/30">
           <div className="w-full md:w-1/3 flex-shrink-0">
             <img 
               src="/lovable-uploads/c3604289-b229-488a-8573-53ccdce6c6f0.png" 

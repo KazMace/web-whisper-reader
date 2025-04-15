@@ -11,21 +11,18 @@ export const Services = () => {
       description: "One-to-one counselling sessions tailored to your needs and goals in Devon or online.",
       details: "£50 per 50 minute session",
       icon: Heart,
-      link: "/services#individual-therapy"
     },
     {
       title: "Clinical Supervision",
       description: "Professional supervision for counsellors and psychotherapists.",
       details: "£60 per 60 minute session",
       icon: Users,
-      link: "/services"
     },
     {
       title: "Online Therapy",
       description: "Therapy sessions via secure video calls for those who prefer remote sessions.",
       details: "£50 per 50 minute session",
       icon: Video,
-      link: "/services#online-therapy"
     },
   ];
 
@@ -53,7 +50,7 @@ export const Services = () => {
               <CardContent>
                 <p className="font-medium text-primary mb-6 text-lg">{service.details}</p>
                 <Button asChild variant="outline" className="w-full rounded-md">
-                  <Link to={service.link}>Learn More</Link>
+                  <Link to="/services">Learn More</Link>
                 </Button>
               </CardContent>
             </Card>
