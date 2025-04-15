@@ -9,7 +9,7 @@ const Services = () => {
     <div className="min-h-screen flex flex-col">
       <Navigation />
       <main className="flex-1">
-        <section className="bg-gradient-to-b from-blue-50 to-white py-12 md:py-20">
+        <section className="bg-gradient-to-b from-primary/5 to-white py-12 md:py-20">
           <div className="container mx-auto px-4">
             <h1 className="text-4xl font-bold mb-6 text-center">Services & Fees</h1>
             <p className="text-center text-muted-foreground max-w-2xl mx-auto">
@@ -18,7 +18,7 @@ const Services = () => {
           </div>
         </section>
         
-        <section className="py-12 md:py-16 bg-gray-50">
+        <section className="py-12 md:py-16 bg-gradient-to-b from-primary/5 to-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <div className="grid gap-10">
