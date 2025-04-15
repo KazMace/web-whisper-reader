@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet-async";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
-import { AboutSection } from "@/components/AboutSection";
 import { ContactCTA } from "@/components/ContactCTA";
 import { PageBanner } from "@/components/PageBanner";
 
@@ -27,7 +26,6 @@ const Index = () => {
           subtitle="Expert therapeutic support to help you navigate life's challenges"
         />
         <Hero />
-        <AboutSection />
         <ContactCTA />
       </main>
       <Footer />

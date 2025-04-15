@@ -25,11 +25,11 @@ export const ContactCTA = () => {
               <div className="flex flex-col md:flex-row justify-between gap-2 md:gap-4">
                 <div>
                   <h4 className="font-medium text-primary mb-1">Phone</h4>
-                  <p className={isMobile ? "text-sm" : ""}>07123 456789</p>
+                  <p className={isMobile ? "text-sm" : ""}>0754 897 2668</p>
                 </div>
                 <div>
                   <h4 className="font-medium text-primary mb-1">Email</h4>
-                  <p className={isMobile ? "text-sm" : ""}>christina@example.com</p>
+                  <p className={isMobile ? "text-sm" : ""}>Christina_Hutchings@hotmail.com</p>
                 </div>
               </div>
               
