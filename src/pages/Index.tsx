@@ -3,10 +3,11 @@ import { Helmet } from "react-helmet-async";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
-import { Services } from "@/components/Services";
-import { AboutSection } from "@/components/AboutSection";
 import { ContactCTA } from "@/components/ContactCTA";
 import { PageBanner } from "@/components/PageBanner";
+import { ServicesOverview } from "@/components/home/ServicesOverview";
+import { TestimonialsSection } from "@/components/home/TestimonialsSection";
+import { AboutPreview } from "@/components/home/AboutPreview";
 
 const Index = () => {
   return (
@@ -28,8 +29,9 @@ const Index = () => {
           subtitle="Expert therapeutic support to help you navigate life's challenges"
         />
         <Hero />
-        <AboutSection />
-        <Services />
+        <ServicesOverview />
+        <AboutPreview />
+        <TestimonialsSection />
         <ContactCTA />
       </main>
       <Footer />

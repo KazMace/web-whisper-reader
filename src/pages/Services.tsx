@@ -1,4 +1,3 @@
-
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -19,11 +18,11 @@ const Services = () => {
           </div>
         </section>
         
-        <section className="py-12 md:py-16">
+        <section className="py-12 md:py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <div className="grid gap-10">
-                <div>
+                <div id="individual-therapy">
                   <h2 className="text-2xl font-bold mb-6">Individual Therapy</h2>
                   <Card>
                     <CardContent className="p-6">
@@ -44,7 +43,7 @@ const Services = () => {
                           
                           <h3 className="text-xl font-medium mb-4">Format Options</h3>
                           <ul className="list-disc list-inside text-muted-foreground space-y-2 mb-6">
-                            <li>Face-to-face sessions in Norwich</li>
+                            <li>Face-to-face sessions in Morchard Bishop, Devon</li>
                             <li>Online therapy via secure video platform</li>
                             <li>Telephone sessions</li>
                           </ul>
@@ -79,12 +78,47 @@ const Services = () => {
                           
                           <h3 className="text-xl font-medium mb-4">Format Options</h3>
                           <ul className="list-disc list-inside text-muted-foreground space-y-2 mb-6">
-                            <li>Face-to-face supervision in Norwich</li>
+                            <li>Face-to-face supervision in Morchard Bishop, Devon</li>
                             <li>Online supervision via secure video platform</li>
                           </ul>
                           
                           <Button asChild className="w-full md:w-auto">
                             <Link to="/contact">Enquire About Supervision</Link>
+                          </Button>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
+
+                <div id="online-therapy">
+                  <h2 className="text-2xl font-bold mb-6">Online Therapy</h2>
+                  <Card>
+                    <CardContent className="p-6">
+                      <div className="grid md:grid-cols-2 gap-8">
+                        <div>
+                          <h3 className="text-xl font-medium mb-4">What is Online Therapy?</h3>
+                          <p className="text-muted-foreground mb-4">
+                            Online therapy provides a flexible and accessible way to receive professional counselling support from the comfort of your own space. Using secure video platforms, we can connect and work together remotely.
+                          </p>
+                          <p className="text-muted-foreground">
+                            Sessions are conducted via confidential video calls, ensuring privacy and convenience while maintaining the same level of professional, compassionate support as in-person therapy.
+                          </p>
+                        </div>
+                        <div>
+                          <h3 className="text-xl font-medium mb-4">Fees</h3>
+                          <p className="text-muted-foreground mb-2">Online Session: £50 (50 minutes)</p>
+                          <p className="text-muted-foreground mb-6">Initial Consultation: £50 (50 minutes)</p>
+                          
+                          <h3 className="text-xl font-medium mb-4">Format Options</h3>
+                          <ul className="list-disc list-inside text-muted-foreground space-y-2 mb-6">
+                            <li>Secure video platform sessions</li>
+                            <li>Flexible scheduling</li>
+                            <li>Accessible from anywhere in Devon</li>
+                          </ul>
+                          
+                          <Button asChild className="w-full md:w-auto">
+                            <Link to="/contact">Book Online Session</Link>
                           </Button>
                         </div>
                       </div>
