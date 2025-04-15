@@ -1,28 +1,31 @@
+
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { PageBanner } from "@/components/PageBanner";
 
 const Services = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navigation />
       <main className="flex-1">
-        <PageBanner 
-          title="Services & Fees" 
-          subtitle="I offer a range of therapeutic services to support your mental health journey."
-        />
+        <section className="bg-gradient-to-b from-blue-50 to-white py-12 md:py-20">
+          <div className="container mx-auto px-4">
+            <h1 className="text-4xl font-bold mb-6 text-center">Services & Fees</h1>
+            <p className="text-center text-muted-foreground max-w-2xl mx-auto">
+              I offer a range of therapeutic services to support your mental health journey.
+            </p>
+          </div>
+        </section>
         
-        <section className="py-12 md:py-16 bg-gradient-to-b from-primary/5 to-white">
+        <section className="py-12 md:py-16">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <div className="grid gap-10">
                 <div id="individual-therapy">
                   <h2 className="text-2xl font-bold mb-6">Individual Therapy</h2>
-                  <Card className="border-0 shadow-elegant card-hover bg-white/90 overflow-hidden">
-                    <div className="absolute top-0 left-0 right-0 h-1 bg-primary/20"></div>
+                  <Card>
                     <CardContent className="p-6">
                       <div className="grid md:grid-cols-2 gap-8">
                         <div>
@@ -41,7 +44,7 @@ const Services = () => {
                           
                           <h3 className="text-xl font-medium mb-4">Format Options</h3>
                           <ul className="list-disc list-inside text-muted-foreground space-y-2 mb-6">
-                            <li>Face-to-face sessions in Morchard Bishop, Devon</li>
+                            <li>Face-to-face sessions in Norwich</li>
                             <li>Online therapy via secure video platform</li>
                             <li>Telephone sessions</li>
                           </ul>
@@ -57,8 +60,7 @@ const Services = () => {
                 
                 <div>
                   <h2 className="text-2xl font-bold mb-6">Clinical Supervision</h2>
-                  <Card className="border-0 shadow-elegant card-hover bg-white/90 overflow-hidden">
-                    <div className="absolute top-0 left-0 right-0 h-1 bg-primary/20"></div>
+                  <Card>
                     <CardContent className="p-6">
                       <div className="grid md:grid-cols-2 gap-8">
                         <div>
@@ -92,8 +94,7 @@ const Services = () => {
 
                 <div id="online-therapy">
                   <h2 className="text-2xl font-bold mb-6">Online Therapy</h2>
-                  <Card className="border-0 shadow-elegant card-hover bg-white/90 overflow-hidden">
-                    <div className="absolute top-0 left-0 right-0 h-1 bg-primary/20"></div>
+                  <Card>
                     <CardContent className="p-6">
                       <div className="grid md:grid-cols-2 gap-8">
                         <div>

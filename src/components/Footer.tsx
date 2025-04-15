@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { Mail, MapPin, Phone } from "lucide-react";
 
@@ -5,7 +6,7 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   return (
-    <footer className="bg-primary/90 text-white relative overflow-hidden">
+    <footer className="bg-gray-900 text-gray-300 relative overflow-hidden">
       <div className="absolute inset-0 bg-pattern opacity-[0.02]"></div>
       <div className="absolute top-0 left-0 right-0 h-px bg-white/10"></div>
       
@@ -28,17 +29,17 @@ export const Footer = () => {
             <h3 className="text-white text-xl font-display font-medium mb-5">Contact</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3 opacity-90">
-                <MapPin className="h-5 w-5 mt-0.5 text-white/80" />
+                <MapPin className="h-5 w-5 mt-0.5 text-primary/80" />
                 <span>Morchard Bishop, Devon, UK</span>
               </li>
               <li className="flex items-center gap-3 opacity-90">
-                <Phone className="h-5 w-5 text-white/80" />
-                <a href="tel:+447548972668" className="hover:text-white transition-colors">
-                  0754 897 2668
+                <Phone className="h-5 w-5 text-primary/80" />
+                <a href="tel:+447890624645" className="hover:text-white transition-colors">
+                  07890 624645
                 </a>
               </li>
               <li className="flex items-center gap-3 opacity-90">
-                <Mail className="h-5 w-5 text-white/80" />
+                <Mail className="h-5 w-5 text-primary/80" />
                 <a href="mailto:Christina_Hutchings@hotmail.com" className="hover:text-white transition-colors">
                   Christina_Hutchings@hotmail.com
                 </a>
@@ -65,7 +66,7 @@ export const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-white/20 mt-10 pt-8 text-sm text-center md:flex md:justify-between opacity-80">
+        <div className="border-t border-gray-800 mt-10 pt-8 text-sm text-center md:flex md:justify-between opacity-80">
           <p>© {currentYear} Christina Hutchings. All rights reserved.</p>
           <div className="mt-4 md:mt-0">
             <Link to="/privacy-policy" className="hover:text-white transition-colors">

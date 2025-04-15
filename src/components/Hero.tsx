@@ -10,11 +10,11 @@ export const Hero = () => {
       <div className="container relative mx-auto px-4 py-24 md:py-32 lg:py-40">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 leading-tight">
-            Professional Counselling, Psychotherapy and Clinical Supervision <span className="text-primary">in Devon</span>
+            Counselling & Psychotherapy <span className="text-primary">in Devon</span>
           </h1>
           
           <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
-            Creating a safe, compassionate, confidential space for healing, growth and understanding through the therapeutic relationship.
+            Creating a safe, compassionate space for you to explore your thoughts and feelings with Christina Hutchings, MBACP Registered Counsellor and Psychotherapist.
           </p>
           
           <div className="flex items-center justify-center mb-10">
