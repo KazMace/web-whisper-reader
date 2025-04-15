@@ -10,7 +10,7 @@ export const Hero = () => {
       <div className="container relative mx-auto px-4 py-24 md:py-32 lg:py-40">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 leading-tight">
-            Counselling & Psychotherapy <span className="text-primary">in Devon</span>
+            Professional Counselling, Psychotherapy <br />& Clinical Supervision <span className="text-primary">in Devon</span>
           </h1>
           
           <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
