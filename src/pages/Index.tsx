@@ -5,6 +5,9 @@ import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
 import { ContactCTA } from "@/components/ContactCTA";
 import { PageBanner } from "@/components/PageBanner";
+import { ServicesOverview } from "@/components/home/ServicesOverview";
+import { TestimonialsSection } from "@/components/home/TestimonialsSection";
+import { AboutPreview } from "@/components/home/AboutPreview";
 
 const Index = () => {
   return (
@@ -26,6 +29,9 @@ const Index = () => {
           subtitle="Expert therapeutic support to help you navigate life's challenges"
         />
         <Hero />
+        <ServicesOverview />
+        <AboutPreview />
+        <TestimonialsSection />
         <ContactCTA />
       </main>
       <Footer />
