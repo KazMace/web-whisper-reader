@@ -1,33 +1,49 @@
 
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { PhoneCall } from "lucide-react";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 export const ContactCTA = () => {
+  const isMobile = useIsMobile();
+
   return (
-    <section className="py-20 md:py-28 bg-gradient-to-r from-primary to-primary/80 text-white relative overflow-hidden">
-      <div className="absolute inset-0 bg-pattern opacity-10"></div>
-      <div className="absolute top-0 left-0 right-0 h-px bg-white/20"></div>
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-white/20"></div>
-      
-      <div className="absolute right-10 top-10 w-32 h-32 rounded-full bg-white/10 blur-2xl"></div>
-      <div className="absolute left-10 bottom-10 w-40 h-40 rounded-full bg-white/5 blur-3xl"></div>
-      
-      <div className="container relative z-10 mx-auto px-4 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Begin Your Journey?</h2>
-        <p className="text-lg md:text-xl mb-10 max-w-2xl mx-auto opacity-90">
-          Taking the first step can be difficult, but you don't have to face it alone. Contact me today to schedule your initial consultation.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-5 justify-center">
-          <Button asChild size="lg" variant="secondary" className="px-8 rounded-full shadow-lg hover:shadow-xl transition-all">
-            <Link to="/contact">Get in Touch</Link>
-          </Button>
-          <Button asChild variant="outline" size="lg" className="border-white/70 text-white hover:text-primary hover:bg-white px-8 rounded-full gap-2 shadow-lg hover:shadow-xl transition-all">
-            <a href="tel:+447890624645">
-              <PhoneCall className="h-5 w-5" />
-              <span>Call 07890 624645</span>
-            </a>
-          </Button>
+    <section className="bg-primary/10 py-20">
+      <div className="container mx-auto px-4">
+        <div className="bg-white rounded-xl shadow-elegant p-8 md:p-12 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h2 className="text-2xl md:text-3xl font-bold mb-4">Ready to take the first step?</h2>
+              <p className="text-muted-foreground mb-6">
+                I offer a safe, confidential space for you to explore your thoughts and feelings. Get in touch to book your initial consultation.
+              </p>
+              <Button asChild size="lg" className="rounded-full px-8 shadow-md">
+                <Link to="/contact">Get in Touch</Link>
+              </Button>
+            </div>
+            
+            <div className="bg-blue-50 p-6 rounded-lg border border-primary/20 flex flex-col space-y-4">
+              <div className="flex flex-col md:flex-row justify-between gap-2 md:gap-4">
+                <div>
+                  <h4 className="font-medium text-primary mb-1">Phone</h4>
+                  <p className={isMobile ? "text-sm" : ""}>07123 456789</p>
+                </div>
+                <div>
+                  <h4 className="font-medium text-primary mb-1">Email</h4>
+                  <p className={isMobile ? "text-sm" : ""}>christina@example.com</p>
+                </div>
+              </div>
+              
+              <div>
+                <h4 className="font-medium text-primary mb-1">Location</h4>
+                <p className={isMobile ? "text-sm" : ""}>Morchard Bishop, Devon</p>
+              </div>
+              
+              <div>
+                <h4 className="font-medium text-primary mb-1">Session Times</h4>
+                <p className={isMobile ? "text-sm" : ""}>Monday - Friday, 9am - 5pm</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
