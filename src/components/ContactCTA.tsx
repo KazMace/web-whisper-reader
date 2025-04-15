@@ -14,7 +14,7 @@ export const ContactCTA = () => {
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-4">Ready to take the first step?</h2>
               <p className="text-muted-foreground mb-6">
-                I offer a safe, confidential space for you to explore your thoughts and feelings. Get in touch to book your initial consultation.
+                I offer a safe, non-judgmental, confidential space for you to explore your thoughts and feelings. Get in touch to book your initial consultation.
               </p>
               <Button asChild size="lg" className="rounded-full px-8 shadow-md">
                 <Link to="/contact">Get in Touch</Link>
@@ -39,8 +39,8 @@ export const ContactCTA = () => {
               </div>
               
               <div>
-                <h4 className="font-medium text-primary mb-1">Session Times</h4>
-                <p className={isMobile ? "text-sm" : ""}>Monday - Friday, 9am - 5pm</p>
+                <h4 className="font-medium text-primary mb-1">Working Hours</h4>
+                <p className={isMobile ? "text-sm" : ""}>Tuesday, Wednesday & Thursday, 9:30am - 7pm</p>
               </div>
             </div>
           </div>
